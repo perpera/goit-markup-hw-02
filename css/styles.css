@@ -17,10 +17,11 @@
 body {
   font-family: "Roboto", sans-serif;
   color: var(--body-text-color);
+  background-color: var(--white-background-color);
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -54,7 +55,7 @@ body {
 }
 .link:hover,
 .link:focus {
-  color: var(--accent-color);
+  color: var(--pressed-state-color);
 }
 
 .list {
@@ -64,6 +65,10 @@ body {
 .btn {
   font-family: inherit;
   cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--pressed-state-color);
 }
 
 .card {
@@ -119,9 +124,10 @@ body {
   background-color: var(--accent-color);
   color: var(--white-background-color);
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
+  align-items: center;
 }
 
 /**--------------- DESCRIPTION ---------------*/
@@ -170,8 +176,13 @@ body {
   border: 1px solid var(--light-accent-color);
   border-radius: 4px;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.04em;
+}
+.pf-btn:hover,
+.pf-btn:focus {
+  color: var(--white-background-color);
 }
